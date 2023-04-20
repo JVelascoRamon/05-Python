@@ -1,5 +1,4 @@
 import pathlib
-
 path = str(pathlib.Path(__file__).parent.absolute())
 
 fname = input('Enter the file name: ')
@@ -9,8 +8,8 @@ except:
     print('File ', fname, ' not found')
     quit()
 
-ext = pathlib.Path(fname).suffix
-fsavename = pathlib.Path(fname).stem + 'Unnumbered' + ext
+ext = pathlib.Path(fname).suffix #mira el formato del carchivo abierto con fname
+fsavename = pathlib.Path(fname).stem + 'Unnumbered' + ext # le da al archivo nuevo la misma extensión que tenía el archivo que ha abierto con fname
 
 fsave = open(path + '/' + fsavename, 'w')
 counter = 1
