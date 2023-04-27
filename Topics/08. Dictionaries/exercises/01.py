@@ -1,4 +1,4 @@
-s = 'ThiS is String with Upper and lower case Letters' 
+s = 'ThiS is a String with Upper and lower case Letters' 
 s = s.lower()
 diccionario = dict()
 
